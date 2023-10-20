@@ -21,7 +21,7 @@ const TopicsList =  () => {
         throw new Error("Failed to fetch topics");
       }
   
-      const data =  res.json();
+      const data =  await res.json();
       setTopics(data.topics)
     } catch (error) {
       console.log("Error loading topics", error);
