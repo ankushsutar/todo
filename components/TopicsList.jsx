@@ -13,7 +13,7 @@ const TopicsList =  () => {
     const apiUrl = process.env.BACKEND_URL;
   
     try {
-      const res = await fetch("http:localhost:3000/api/topics", {
+      const res = await fetch("/api/topics", {
         cache: "no-store",
       });
   
